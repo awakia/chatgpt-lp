@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Typography, Box, Button, Grid } from "@mui/material";
 import { useRouter } from "next/router";
 import { Chat, School, BusinessCenter, Language } from "@mui/icons-material";
+import Image from "next/image";
 
 const HomePage: React.FC = () => {
   const router = useRouter();
@@ -27,13 +28,21 @@ const HomePage: React.FC = () => {
           alignItems: "center",
         }}
       >
-        <Typography
-          variant="h3"
-          component="h1"
-          sx={{ fontWeight: 600, color: "#FFFFFF" }}
+        <Box
+          sx={{
+            position: "relative",
+            width: "100vw",
+            height: "40vh",
+            overflow: "hidden",
+          }}
         >
-          AI English
-        </Typography>
+          <Image
+            src="https://images.unsplash.com/photo-1655635643568-f30d5abc618a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=640&ixid=MnwxfDB8MXxyYW5kb218MHx8YWkgZW5nbGlzaHx8fHx8fDE2ODEwOTM5Mjk&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=960"
+            fill
+            style={{ objectFit: "cover" }}
+            alt="AI English"
+          />
+        </Box>
       </Box>
       <Container maxWidth="md">
         <Box
