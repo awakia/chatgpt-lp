@@ -18,6 +18,23 @@ const HomePage: React.FC = () => {
         fontFamily: "Inter, sans-serif",
       }}
     >
+      <Box
+        sx={{
+          background: "linear-gradient(135deg, #007AFF 0%, #62AFFF 100%)",
+          minHeight: "40vh",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <Typography
+          variant="h3"
+          component="h1"
+          sx={{ fontWeight: 600, color: "#FFFFFF" }}
+        >
+          AI English
+        </Typography>
+      </Box>
       <Container maxWidth="md">
         <Box
           sx={{
@@ -25,18 +42,11 @@ const HomePage: React.FC = () => {
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
-            minHeight: "100vh",
+            minHeight: "60vh",
             textAlign: "center",
             gap: 3,
           }}
         >
-          <Typography
-            variant="h2"
-            component="h1"
-            sx={{ fontWeight: 600, color: "#1F1F1F" }}
-          >
-            Unlock Your English Potential with AI
-          </Typography>
           <Typography
             variant="h5"
             component="h2"
@@ -136,11 +146,11 @@ const HomePage: React.FC = () => {
           <Button
             variant="contained"
             sx={{
-              backgroundColor: "#007AFF",
+              background: "linear-gradient(135deg, #007AFF 0%, #62AFFF 100%)",
               color: "#FFFFFF",
               mt: 4,
               "&:hover": {
-                backgroundColor: "#005FD7",
+                background: "linear-gradient(135deg, #005FD7 0%, #4791DB 100%)",
               },
             }}
             size="large"
