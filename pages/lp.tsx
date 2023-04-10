@@ -26,11 +26,12 @@ const HomePage: React.FC = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          position: "relative",
         }}
       >
         <Box
           sx={{
-            position: "relative",
+            position: "absolute",
             width: "100vw",
             height: "40vh",
             overflow: "hidden",
@@ -43,7 +44,29 @@ const HomePage: React.FC = () => {
             alt="AI English"
           />
         </Box>
+        <Typography
+          variant="h3"
+          component="h1"
+          sx={{
+            fontWeight: 600,
+            color: "#FFFFFF",
+            textAlign: "center",
+            position: "absolute",
+            top: "25%",
+          }}
+        >
+          Unlock Your English Potential with AI
+        </Typography>
+        <Button
+          variant="contained"
+          color="secondary"
+          onClick={handleButtonClick}
+          sx={{ position: "absolute", top: "55%" }}
+        >
+          Get Started
+        </Button>
       </Box>
+
       <Container maxWidth="md">
         <Box
           sx={{
@@ -152,21 +175,6 @@ const HomePage: React.FC = () => {
               </Box>
             </Grid>
           </Grid>
-          <Button
-            variant="contained"
-            sx={{
-              background: "linear-gradient(135deg, #007AFF 0%, #62AFFF 100%)",
-              color: "#FFFFFF",
-              mt: 4,
-              "&:hover": {
-                background: "linear-gradient(135deg, #005FD7 0%, #4791DB 100%)",
-              },
-            }}
-            size="large"
-            onClick={handleButtonClick}
-          >
-            Start Your Free Trial
-          </Button>
         </Box>
       </Container>
     </Box>
